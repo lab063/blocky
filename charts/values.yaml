@@ -34,6 +34,10 @@ blocky-helm:
         $ORIGIN home.
         * 3600 A 192.168.88.150
         @ 3600 A 192.168.88.150
+
+        $ORIGIN mabbox.bytel.fr.
+        * 3600 A 192.168.1.254
+        @ 3600 A 192.168.1.254
     prometheus:
       enable: true
 
