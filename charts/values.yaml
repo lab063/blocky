@@ -38,6 +38,10 @@ blocky-helm:
         $ORIGIN mabbox.bytel.fr.
         * 3600 A 192.168.1.254
         @ 3600 A 192.168.1.254
+
+        $ORIGIN EPSON2494BD.local.
+        * 3600 A 192.168.20.10
+        @ 3600 A 192.168.20.10
     prometheus:
       enable: true
 
