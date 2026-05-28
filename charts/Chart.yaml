@@ -2,6 +2,6 @@ apiVersion: v2
 name: blocky
 version: 1.0.0
 dependencies:
-  - name: blocky-helm
-    version: 1.0.10
-    repository: https://dan1el-k.github.io/blocky-helm
+  - name: blocky
+    version: 22.7.1
+    repository: oci://oci.trueforge.org/truecharts
