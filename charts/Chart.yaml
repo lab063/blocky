@@ -3,5 +3,5 @@ name: blocky
 version: 1.0.0
 dependencies:
   - name: blocky
-    version: 22.16.3
+    version: 22.19.1
     repository: oci://oci.trueforge.org/truecharts
