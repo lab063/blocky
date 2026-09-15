@@ -50,6 +50,33 @@ blocky:
           - default
           - default-ads
           - default-tracking
+      - name: 192.168.20.0/24
+        groups:
+          - default
+          - default-ads
+          - default-tracking
+          - philips-tv
+          - sonos
+          - roborock
+    blacklist:
+      - name: philips-tv
+        lists:
+          - |
+            samba.tv
+            samba-tv.com
+            app-measurment.com
+      - name: sonos
+        lists:
+          - |
+            device-api.urbanairship.com
+            logx.optimizely.com
+            cdn.optimizely.com
+      - name: roborock
+        lists: []
+    whitelist:
+      - name: sonos
+        lists:
+          - msmetrics.ws.sonos.com
   # --- Désactive le query log PostgreSQL si tu n'en veux pas ---
   queryLog:
     type: ""
