@@ -85,6 +85,12 @@ blocky:
       enabled: false
   redis:
     enabled: true
+    resources:
+      requests:
+        memory: 128Mi
+      limits:
+        cpu: {}
+        memory: 200Mi
   # --- Config brute blocky (comble les trous non couverts par le template) ---
   blockyConfig:
     bootstrapDns:
