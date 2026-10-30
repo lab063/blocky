@@ -58,6 +58,22 @@ blocky:
           - philips-tv
           - sonos
           - roborock
+      # Molotov : le player attend le SDK Google IMA pour demarrer le direct
+      - name: 192.168.10.104/32
+        groups:
+          - default
+          - default-ads
+          - default-tracking
+          - molotov
+      - name: 192.168.20.10/32
+        groups:
+          - default
+          - default-ads
+          - default-tracking
+          - philips-tv
+          - sonos
+          - roborock
+          - molotov
     blacklist:
       - name: philips-tv
         lists:
@@ -77,6 +93,10 @@ blocky:
       - name: sonos
         lists:
           - msmetrics.ws.sonos.com
+      - name: molotov
+        lists:
+          - |
+            imasdk.googleapis.com
   # --- Désactive le query log PostgreSQL si tu n'en veux pas ---
   queryLog:
     type: ""
