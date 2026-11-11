@@ -109,7 +109,7 @@ blocky:
       requests:
         memory: 128Mi
       limits:
-        cpu: {}
+        cpu: ""
         memory: 200Mi
   # --- Config brute blocky (comble les trous non couverts par le template) ---
   blockyConfig:
